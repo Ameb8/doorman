@@ -1,0 +1,92 @@
+ring-ai/.env.example
+  s_134f6df0dca4ab::t_59b794640f10bf 1-31
+ring-ai/src/dedup.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-20
+ring-ai/src/db.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-21
+ring-ai/src/health.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-3
+ring-ai/src/providers/caption/interface.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-3
+ring-ai/src/providers/caption/openai.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-14
+ring-ai/sidecar/Dockerfile
+  s_4e942708bcfb76::t_6b24705f3d9758 1-2
+ring-ai/src/index.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-13,17-34
+  s_134f6df0dca4ab::t_58bc9d145288b8 14-16
+ring-ai/sidecar/requirements.txt
+  s_4e942708bcfb76::t_6b24705f3d9758 1
+ring-ai/src/config.ts
+  s_134f6df0dca4ab::t_caa753a7448188 1-80,87-168,177-228
+  s_134f6df0dca4ab::t_56f8f86a1b79a8 81-86
+  s_134f6df0dca4ab::t_687ba5cea8018d 169-176
+ring-ai/sidecar/app.py
+  s_4e942708bcfb76::t_6b24705f3d9758 1-2
+ring-ai/.gitignore
+  s_4e942708bcfb76::t_227196ce1223bd 1-2
+  s_0b76291a4963cf::t_cdeb621b602eb2 3
+ring-ai/src/providers/face/noop.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-7
+ring-ai/src/listen-smoke.ts
+  s_0b76291a4963cf::t_03c66a3cc56d88 98,119
+  s_0b76291a4963cf::t_b1fa80d809c4da 90
+  s_0b76291a4963cf::t_0238ed740aeed3 19-31,40,157-160
+  s_0b76291a4963cf::t_cdeb621b602eb2 1-18,32-39,41-89,91-97,99-118,120-156,161-264
+ring-ai/src/providers/face/interface.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-14
+ring-ai/src/notifier.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-14
+ring-ai/src/providers/face/local.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-14
+ring-ai/package.json
+  s_4e942708bcfb76::t_6b24705f3d9758 1-9,11-14,16,18-24,26-27
+  s_4e942708bcfb76::t_b725cbba8b04f9 15,25
+  s_0b76291a4963cf::t_cdeb621b602eb2 10
+  s_4e942708bcfb76::t_bbfd64a34006ee 17
+ring-ai/src/providers/face/external.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-10
+ring-ai/src/ingest.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-12
+ring-ai/tsconfig.json
+  s_4e942708bcfb76::t_6b24705f3d9758 1-22
+ring-ai/src/providers/caption/gemini.ts
+  s_4e942708bcfb76::t_6b24705f3d9758 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "development:1.4.12",
+  "base_commit_sha": "b74a2c55af09e0f1b4acd034f92a75f1e79ba7c1",
+  "prompts": {},
+  "humans": {
+    "h_11a994996f9bb9": {
+      "author": "Alex Buckley <alexmeb81@outlook.com>"
+    }
+  },
+  "sessions": {
+    "s_0b76291a4963cf": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5224-9c8a-70c1-a7c5-809cef868e48",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Alex Buckley <alexmeb81@outlook.com>"
+    },
+    "s_134f6df0dca4ab": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5210-761c-73c1-8626-97591307038e",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Alex Buckley <alexmeb81@outlook.com>"
+    },
+    "s_4e942708bcfb76": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e51ea-2594-7a32-a75d-2b7427645d2a",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Alex Buckley <alexmeb81@outlook.com>"
+    }
+  }
+}
