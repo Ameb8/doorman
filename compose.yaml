@@ -1,0 +1,24 @@
+services:
+
+  ring-ai:
+    image: ghcr.io/yourname/ring-ai:latest
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/data         # SQLite database
+      - ./frames:/frames     # keyframes (if STORE_FRAMES=true)
+    ports:
+      - "3000:3000"          # health endpoint
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  face-sidecar:
+    profiles: ["local-face"]  # only starts with: docker compose --profile local-face up
+    image: ghcr.io/yourname/ring-ai-face:latest
+    restart: unless-stopped
+    volumes:
+      - ./faces:/faces:ro    # known face images
+    platform: linux/arm64   # also built for linux/amd64

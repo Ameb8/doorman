@@ -1,0 +1,27 @@
+{
+  "name": "ring-ai",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "start": "node dist/index.js",
+    "listen-smoke": "npm run build && node dist/listen-smoke.js",
+    "dev": "tsc -w -p tsconfig.json",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "p-queue": "^8.1.0",
+    "ring-client-api": "^14.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
